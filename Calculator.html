@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="cal-style.css" />
+    
+</head>
+<body>
+    <main>
+        <header><h1>Calculator</h1></header>
+        <section>
+            <div class="container">
+                <div class="screen" ><h2>OUTPUT:</h2><p id="final"></p>
+                <h3>History:</h3><p id="history"> </p></div>
+                <div class="input" ><form><input id="display" value="" type="text" name="Expression" placeholder="Values"  onkeydown="validInput(this,event)"></form></div>
+                <div class="buttons">
+                    <form>
+                        <input id="number-one" type="button" value="1" onclick="valuePicker(this)">
+                        <input id="number-two" type="button" value="2" onclick="valuePicker(this)">
+                        <input id="number-three" type="button" value="3" onclick="valuePicker(this)">
+                        <input id="number-four" type="button" value="4"onclick="valuePicker(this)">
+                        <input id="number-five" type="button" value="5"onclick="valuePicker(this)">
+                        <input id="number-six"type="button" value="6"onclick="valuePicker(this)">
+                        <input id="number-seven" type="button" value="7"onclick="valuePicker(this)">
+                        <input id="number-eight" type="button" value="8"onclick="valuePicker(this)">
+                        <input id="number-nine" type="button" value="9"onclick="valuePicker(this)">
+                        <input id="number-zero" type="button" value="0"onclick="valuePicker(this)">
+                        <input id="number-multi" type="button" value="*"onclick="valuePicker(this)">
+                        <input id="number-div" type="button" value="/"onclick="valuePicker(this)">
+                        <input id="number-add" type="button" value="+"onclick="valuePicker(this)">
+                        <input id="number-sub" type="button" value="-"onclick="valuePicker(this)">
+                        <input id="equals" type="button" value="="onclick="result()">
+                        <input id="clear" type="button" value="clr" onclick="clearScreen()">
+                        
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="calc-js.js"></script>
+</body>
+</html>

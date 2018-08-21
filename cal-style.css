@@ -1,0 +1,39 @@
+header{
+    background-color: #77a52c;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.container{
+    height: auto;
+    
+    margin-left:30em;
+    margin-right: 30em; 
+    background-color: #808080;
+    
+}
+
+.screen{
+    height: 200px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    overflow:scroll;
+}
+
+.input input{
+    width: 100%;
+    height: 50px;
+}
+p{
+    font-size: 1.5em;
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+        justify-content: space-evenly;
+}
+.buttons input{
+    width: 9.6em;
+    height: 5em;
+}

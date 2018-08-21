@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="formStyle.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <main>
+        <section class="form">
+        <form onsubmit="return validate()" action="success.html" name="details" >
+            <label>First Name:<input id="Fname" type="text" placeholder="First Name" ></label><br>
+            <span class="err"><p id="errName">Please check your input</p></span>
+            <label>Last Name:<input id="Lname" type="text" placeholder="Last Name" ></label><br>
+            <span class="err"><p id="errLname">Please check your input</p></span>
+            <label>Number:<input id="mynumber"type="text" placeholder="Phone Number"></label><br>
+            <span class="err"><p id="errPhone">Please check your input</p></span>
+            <label>Email:<input id="email1" type="text" placeholder="Email"></label><br>
+            <span class="err"><p id="errEmail">Please check your input</p></span>
+            <label>Address:<textarea id="address" class="address" type="text" placeholder="Address"></textarea></label><br>
+            
+            <label>Gender :<input  class="gender" type="radio" value="Male" name="Gender">
+            Male
+            <input class="gender" type="radio" value="Female" name="Gender">
+            Female
+            <input class="gender" type="radio" value="Trans" name="Gender">
+            Trans<br></label>
+            <span class="err"><p id="errGender">Please check your input</p></span>
+            
+            <label>City
+                <select id="City">
+                    <option value="--Select--">--Select--</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Pune">Pune</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Una">Una</option>
+        
+            </select></label><br>
+            <span class="err"><p id="errCity"></p></span>
+            <label><input type="submit" value="Submit"></label>
+        </form>
+    </section>
+    </main>
+</body>
+</html>

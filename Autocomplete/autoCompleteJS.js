@@ -16,7 +16,7 @@ function output() {
                 arr.push(names[i]);
             }
         }
-
+    arr.sort();
         console.log(arr.length);
         var parentList = document.getElementById("parentList");
         if (arr.length > 0) {

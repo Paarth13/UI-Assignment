@@ -16,7 +16,7 @@ function output() {
                 arr.push(names[i]);
             }
         }
-    arr.sort();
+        arr.sort();
         console.log(arr.length);
         var parentList = document.getElementById("parentList");
         if (arr.length > 0) {
@@ -57,6 +57,11 @@ function clearTab() {
 }
 
 function focusRemove() {
-    document.getElementById("parentList").style.display = "none";
 
+    if (event.target.type != "text") {
+        document.getElementById("parentList").style.display = "none";
+    }
+    else {
+        document.getElementById("parentList").style.display = "block";
+    }
 }

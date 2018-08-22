@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    background-color: #3b3b3b93;
+}
+.form{
+    
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+
+}
+input{
+    width: 19em;
+    height: 2em;
+    margin: 20px;
+    display: block;
+    border-bottom: 3px solid  #000000;
+}
+label{
+    width: 100px;
+    font-weight: bold;
+}
+
+
+.gender{
+    
+    width: 5em;
+    display: inline;
+}
+p{
+    color: #ff0000;
+    display: none;
+    font-size: 1.5em;
+}
+
+textarea{
+    width: 19em;
+    height: 6em;
+    margin-top: 10px;
+    margin-left: 24px;
+    border-bottom: 3px solid  #000000;
+    display: block;
+}
+
+select{
+    width: 20em;
+    height: 3em;
+}
+
+label{
+    width:100px;
+}

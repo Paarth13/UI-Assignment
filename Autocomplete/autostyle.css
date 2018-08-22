@@ -9,10 +9,9 @@
 .container {
 	margin: 0 auto;
     display: flex;
-    margin-top: 185px;
-	flex-direction: column;
+    flex-direction: column;
 	width: 60%;
-    height: auto;
+    height: -webkit-fill-available;
     justify-content: center;
 }
 
@@ -40,7 +39,7 @@ input {
 }
 
 .list {
-	height: auto;
+	height: 10em;
 	width: 95%;
 }
 
@@ -65,4 +64,8 @@ li {
 ul :hover {
 	background-color: #0000ff;
 	color: #ffffff;
+}
+
+body {
+	height: 100%;
 }

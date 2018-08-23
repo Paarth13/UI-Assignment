@@ -8,11 +8,11 @@
 
 .container {
 	margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+    	display: flex;
+    	flex-direction: column;
 	width: 60%;
-    height: -webkit-fill-available;
-    justify-content: center;
+    	min-height: 100vh;
+    	justify-content: center;
 }
 
 .text-box {
